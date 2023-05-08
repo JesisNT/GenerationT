@@ -1,0 +1,40 @@
+ * {
+     background-color: #3D5A80;
+     font: 100% verdana;
+     color: #f7ede2;
+ }
+
+ h1 {
+     color: rgb(238, 108, 77);
+ }
+
+ h2 {
+     color: #E0FBFC;
+ }
+
+ li {
+     color: #ffffff;
+ }
+
+ #bordeado {
+     border-width: 3px;
+     border-style: solid;
+     border-color: white;
+ }
+
+ .aloha {
+     background-color: #293241;
+     color: white;
+ }
+ input{
+    border-width: 2px;
+     border-style: dashed;
+     border-color: rgb(238,108,77);
+ }
+ p{
+    font-size: 150%;
+    color: #98C1D9;
+ }
+ input[type = "text"]{
+    background-color: lightskyblue;
+ }
