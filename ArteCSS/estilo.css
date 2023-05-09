@@ -1,0 +1,34 @@
+div.superPanchoo {
+    margin: 0px 10%;
+}
+
+#color1 {
+    height: 100px;
+    width: 80%;
+    background-color: darkgoldenrod;
+    border-top-left-radius: 200px 200px;
+    border-top-right-radius: 200px 200px;
+    border-bottom-left-radius: 60px 60px;
+    border-bottom-right-radius: 60px 60px;
+}
+
+#color2 {
+    height: 100px;
+    width: 80%;
+    background-color: red;
+    border-radius: 200px;
+}
+
+#color3 {
+    height: 100px;
+    width: 80%;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    border-bottom-left-radius: 200px 200px;
+    border-bottom-right-radius: 200px 200px;
+    border-top-left-radius: 60px 60px;
+    border-top-right-radius: 60px 60px;
+
+}
+
+/* border-bottom: 1px solid #000; */
