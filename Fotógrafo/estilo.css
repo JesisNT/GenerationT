@@ -1,0 +1,21 @@
+#container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+img {
+    width: 30%;
+    margin: 1.4%;
+    margin-left: 0px auto;
+}
+
+h1 {
+    margin-left: 0px auto;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    padding-bottom: 10px;
+}
