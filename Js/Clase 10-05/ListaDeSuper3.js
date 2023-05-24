@@ -1,31 +1,32 @@
-let lista = []
-let listaNueva = ["Yerba Fea"]
+let listaDeSuper = []
+let listaNueva = ["Chocolates Santino TM marca registrada"]
 
-lista.push("Yerba mala", "Yerba buena")
+listaDeSuper.push("Yerba mala", "TRUCHA yerba", "Yerba buena")
 
-lista.unshift("yerba Normal", "Yerba regular")
+listaDeSuper.unshift("Canarias (cheto)")
 
-console.log(lista.length)
+console.log(listaDeSuper.length)
 
 
-let noHabia = lista.pop()
+let noHabia = listaDeSuper.pop()
 
-let Comprado = lista.shift()
+let Comprado = listaDeSuper.shift()
 
-console.log(lista.length)
+console.log(listaDeSuper.length)
+
 
 
 function logitems(aux){
-    for(i = 0; i < aux.length; i++){
-        console.log(aux[i])
-    }
+    aux.forEach(element => console.log(element));
+
 }
 
-for(i = 1; i<3; i++ ){
-    if (i = 1 ){
-        logitems(lista)
-    }else if(i = 2){
-        logitems(listaNueva)
-    }
+for (i = 0; i < listaDeSuper.length; i++) {
+    logitems(listaDeSuper);
+
+}
+
+for (i = 0; i < listaNueva.length; i++) {
+    logitems(listaNueva);
 
 }
