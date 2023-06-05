@@ -1,0 +1,13 @@
+let frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
+// CODEA LA SOLUCIÓN
+let exclamacion = '¡'
+let exclamacion1 = '!'
+console.log(frases); // ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.']
+let frasesExclamadas
+
+     frasesExclamadas = frases.map(frases => exclamacion + frases + exclamacion1);
+
+
+console.log(frasesExclamadas); // [ '¡Labore sea dolor.!', '¡Justo rebum dolor.!', '¡Stet lorem amet.!' ]
+
+
