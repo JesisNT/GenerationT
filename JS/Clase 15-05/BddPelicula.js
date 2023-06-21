@@ -17,7 +17,7 @@ let  peliculas = [
   ];
 
   function imprimirPelis(){
-    for (let i = 0; i < peliculas.length; i++) {
+    for ( i = 0; i < peliculas.length; i++) {
         let película = peliculas[i];
         let visto = película.loHasVisto;
         console.log(visto + ' "' + película.titulo + '" - ' + película.rating + " estrellas");
