@@ -11,57 +11,22 @@
 </head>
 
 <body>
-   <script src="script.js"></script>
+  
     <div class="container">
         <div class="main">  
             <h2>⌨️ TYPER 3000 ⌨️</h2>
             <p>Escribí la siguiente palabra:</p>
             <h1 id="randomWord2"> </h1>
-           <script>const words = [
-            "californication",
-            "plataforma5",
-            "black",
-            "summer",
-            "flea",
-            "aeroplane",
-            "peppers",
-            "unlimited",
-            "arcadium",
-            "love",
-            "getaway",
-            "stadium",
-            "quixoticelixer",
-            "quarter",
-            "snow",
-            "dylan",
-            "zephyr",
-            "funky",
-            "chili",
-          ];
-          
-              function randomWords() {
-                  randomizador = Math.floor(Math.random() * words.length);
-                  return words[randomizador]; 
-              }
-              
-          var palabraAleatoria = randomWords();
-          var time = 10;
-          var score = 0; 
-           
-           function addToDOM() {
-           x =  randomWord();
-            return document.getElementById("randomWord2").innerHTML = 's';
-            }
-        addToDOM();
-        </script>
-            <input type="text" id="text" autocomplete="off" placeholder="Type the
-word here..." />
+        
+            <input type="text" id="txt" autocomplete="off" placeholder="Type the
+word here..." /> 
+            
             <p class="time-container">Tiempo restante: <span id="timeSpan">10s</span></p>
             <p class="score-container">Score: <span id="score">0</span></p>
         </div>
         <div id="end-game-container" class="end-game-container"></div>
     </div>
-    
+    <script src="./script.js"> </script>    
 </body>
 
 </html>
