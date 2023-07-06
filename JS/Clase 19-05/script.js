@@ -23,7 +23,9 @@ const words = [
       
   var palabraAleatoria = randomWords();
   var time = 10;
+  document.getElementById("timeSpan").innerHTML = time;
   var score = 0;
+  document.getElementById("scoreSpan").innerHTML = score;
   var palabraIngresada; 
    
   function randomWords() {
@@ -38,23 +40,37 @@ randomWords();
 addToDOM();
 
 
-const input = document.querySelector('input');
+const inputTxt = document.getElementById('txt');
+inputTxt.addEventListener('input', compararPalabras);
 
-input.addEventListener('input', recuperaValor);
+function compararPalabras(e) {
+   
+    palabraIngresada = e.target.value;
 
-function recuperaValor(e) {
- return palabraIngresada = e.srcElement.value;
+  if (palabraIngresada === palabraAleatoria) {
+    time += 3;
+    document.getElementById("timeSpan").innerHTML = time;
+    randomWords();
+    addToDOM();
+    e.target.value = "";
+   
+  } else {
+    
+  }
 }
 
-input.addEventListener('input', comparaValores);
-function comparaValores(){
-    if(palabraIngresada === palabraAleatoria){
-        time += 3;
-        input.innerHTML = "";
-        
-    }
-    else return false;
+function actualizaTiempo(){
+   while (time >0) {
+    document.getElementById("timeSpan").innerHTML = time;
+    time --;
+   }
+   if (time === 0 ){
+    clearInterval(time);
+    document.getElementById("timeSpan").innerHTML = time;
+   }
 }
+
+
 
 
 
