@@ -21,10 +21,14 @@
             <input type="text" id="txt" autocomplete="off" placeholder="Type the
 word here..." /> 
             
-            <p class="time-container">Tiempo restante: <span id="timeSpan"></span></p>
-            <p class="score-container">Score: <span id="scoreSpan"></span></p>
+            <p class="time-container">Tiempo restante: <span id="timeSpan"> 10s </span></p>
+            <p class="score-container">Score: <span id="scoreSpan">0 </span></p>
         </div>
-        <div id="end-game-container" class="end-game-container"></div>
+        <div id="end-game-container" class="end-game-container">
+            <h2 id = "h2"> </h2>
+            <p id = "parrafo"> </p>
+            <button onclick="location.reload()"> Volvé a empezar </button>
+        </div>
     </div>
     <script src="./script.js"> </script>    
 </body>

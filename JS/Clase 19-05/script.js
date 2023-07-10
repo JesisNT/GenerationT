@@ -21,11 +21,9 @@ const words = [
   ];
   
       
-  var palabraAleatoria = randomWords();
+  var palabraAleatoria;
   var time = 10;
-  document.getElementById("timeSpan").innerHTML = time;
   var score = 0;
-  document.getElementById("scoreSpan").innerHTML = score;
   var palabraIngresada; 
    
   function randomWords() {
@@ -35,12 +33,13 @@ const words = [
 randomWords();
 
    function addToDOM() {
+    palabraAleatoria = randomWords();
     document.getElementById("randomWord2").innerHTML = palabraAleatoria;
-    }
+    } 
 addToDOM();
 
 
-const inputTxt = document.getElementById('txt');
+var inputTxt = document.getElementById('txt');
 inputTxt.addEventListener('input', compararPalabras);
 
 function compararPalabras(e) {
@@ -48,29 +47,39 @@ function compararPalabras(e) {
     palabraIngresada = e.target.value;
 
   if (palabraIngresada === palabraAleatoria) {
+    updateScore();
     time += 3;
-    document.getElementById("timeSpan").innerHTML = time;
     randomWords();
     addToDOM();
     e.target.value = "";
    
-  } else {
-    
+  } 
+
+}
+
+function updateScore(){
+    score ++;
+    var scoreHTML = document.getElementById("scoreSpan");
+    scoreHTML.textContent = score;
+}
+
+function actualizarTiempo(){
+  time -= 1;
+  document.getElementById("timeSpan").innerHTML = time + 's';
+  if(time === 0){
+    clearInterval(intervalId);
+    gameOver()
   }
 }
 
-function actualizaTiempo(){
-   while (time >0) {
-    document.getElementById("timeSpan").innerHTML = time;
-    time --;
-   }
-   if (time === 0 ){
-    clearInterval(time);
-    document.getElementById("timeSpan").innerHTML = time;
-   }
+const intervalId = setInterval(actualizarTiempo, 1000);
+
+function gameOver(){
+ 
+  document.getElementById("h2").innerHTML = "Te quedaste sin tiempo, ja.";
+  document.getElementById("parrafo").innerHTML = "Puntaje de: "+ score;
+
 }
-
-
 
 
 
