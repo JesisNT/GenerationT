@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container"> 
+        <h1> Delivery De Compras De Libros</h1>
+        <hr>
+        <sub>Datos del pedido</sub>
+    </div>
+
+    <div class="datos-pedido">
+        <input type="text" id="txtNombreLibro" autocomplete="off" placeholder="Nombre del libro..."/>
+        <input type="text" id="txtNombreAutor" autocomplete="off" placeholder="Nombre del autor..."/>
+        <input type="text" id="txtDireccionComprador" autocomplete="off" placeholder="Su dirección..."/>
+    </div>
+
+    <div class="btn-container">
+        <button id="cargar"> CARGAR </button>
+        <button id="refrescar" > REFRESCAR <i class="fas fa-redo-alt fa"></i> </button>
+        <script src="https://kit.fontawesome.com/be6f6f9a32.js" crossorigin="anonymous"></script>
+    </div>
+
+    <div class="confirmaciones">
+        <h1 id="h1"> </h1>
+        <ul id="listaDesordenada">
+
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
