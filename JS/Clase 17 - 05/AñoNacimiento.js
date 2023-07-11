@@ -11,6 +11,6 @@ function agregandoFechaNacimiento(arr){
 }
 console.log(persona);
 
-//ejecutando función.
+
 agregandoFechaNacimiento(persona);
 console.log(persona);
